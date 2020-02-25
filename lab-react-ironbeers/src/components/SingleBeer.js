@@ -12,7 +12,6 @@ class SingleBeer extends Component {
   }
 
   getSingleBeer = () =>{
-    const beerId = this.props.match.params.id
     axios.get(`https://ih-beer-api.herokuapp.com/beers/${beerId}` )
       .then(responseFromApi => {
         this.setState({beer: responseFromApi.data})
