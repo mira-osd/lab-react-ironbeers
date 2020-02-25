@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 class SingleBeer extends Component {
   state = {
@@ -23,6 +24,7 @@ class SingleBeer extends Component {
     console.log('beer', this.state.beer)
     return(
         <div>
+          <Navbar />
             {Object.keys(this.state.beer).length > 0 && 
                 <div key={this.state.beer._id}>
                     <img className="img-beer" src={this.state.beer.image_url} alt=""></img>

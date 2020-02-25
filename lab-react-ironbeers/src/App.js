@@ -6,6 +6,7 @@ import ListBeers from './components/ListBeers'
 import SingleBeer from './components/SingleBeer';
 import RandomBeer from './components/RandomBeer';
 import NewBeer from './components/NewBeer';
+import Navbar from './components/Navbar'
 
 class App extends Component {
   render() {

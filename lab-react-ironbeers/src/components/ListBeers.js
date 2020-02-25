@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 class ListBeers extends Component {
   state = { listOfBeers: [] }
@@ -20,6 +21,7 @@ class ListBeers extends Component {
   render(){
     return(
       <div>
+        <Navbar />
           { this.state.listOfBeers.map( beer => {
             return (
               <div key={beer._id}>
